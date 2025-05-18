@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'poppins',sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(images/photo.avif); 
+    background-size: cover;
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+ 
+  
+  .form-container {
+    box-shadow: rgba(252, 251, 251, 0.548) 0px 12px 28px 0px,
+    rgba(251, 248, 248, 0.377) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.589) 0px 0px 0px 1px inset;
+    background-color: rgba(255, 255, 255, 0.336);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+  
+  }
+  
+  .form-container .icon-center {
+    color: #000000;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper {
+    position: relative;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc; 
+    background-color: transparent;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-bottom: 2px solid #004e5c; 
+    outline: none;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+  }
+  
+  .input-wrapper ion-icon {
+    margin-left: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+  }
+  
+  .erreur {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    height: 50px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #004642, #df82df);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 350px;
+    margin-right: -20px;
+}
+
+  
+  button:hover {
+    height: 55px;
+    background: linear-gradient(to right, rgb(0, 29, 34), #ad6fad);
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }

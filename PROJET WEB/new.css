@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #006b66, #e694e6);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.336); 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group .btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.button-group .btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.button-group .save-btn {
+  background-color: #006b66;
+  color: #fff;
+}
+
+.button-group .save-btn:hover {
+  background-color: #005955;
+}
+
+.button-group .back-btn {
+  background-color: #006b66;
+  color: #fff;
+  
+}
+
+.button-group .back-btn:hover {
+  background-color: #005955;
+}
+
+
+

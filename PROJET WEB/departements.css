@@ -1,0 +1,122 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #006b66, #e694e6);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+}
+.fa-solid{
+    color: #ffffff;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.admin-name{
+    font-weight: bold;
+}
+.menu-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.menu-buttons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.menu-buttons a:hover {
+    text-decoration: underline;
+}
+
+.login-info {
+    display: flex;
+    align-items: center;
+    font-weight: bold; /* Pour correspondre à la taille de l'écriture des liens */
+}
+
+.login-info span {
+    margin-right: 10px;
+}
+
+.login-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-info a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.336); /* Fond semi-transparent blanc */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ebcfe4;
+}
+
+table th {
+    background-color: rgba(255, 255, 255, 0.336); /* Fond semi-transparent blanc */
+    color: #fff;
+}
+
+table tbody tr:hover {
+    background-color: #ecd5ec;
+}
+
+.fa-trash {
+    color: red;
+}
+
+.fa-pencil {
+    color: green;
+}

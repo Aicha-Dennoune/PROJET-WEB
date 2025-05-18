@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+#background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(176, 74, 250, 0.7), rgba(2, 72, 61, 0.7));
+    z-index: -1;
+}
+
+.login-container {
+    text-align: center;
+    background: none;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.title-background {
+    margin-bottom: 30px;
+    animation: welcomeAnim 3000ms;
+}
+
+@keyframes welcomeAnim {
+    from {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 50;
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(0%);
+      opacity: 100;
+    }
+  }
+
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgb(0, 43, 54);
+}
+
+.login-button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.login-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    background-color: rgb(0, 78, 102);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-button i {
+    margin-right: 10px;
+}
+
+.login-button:hover {
+    background-color: #00333a;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+}
